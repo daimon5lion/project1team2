@@ -1,0 +1,53 @@
+body {
+  background: url("../images/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.sidebar {
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  font-size: 30px;
+}
+.slide {
+  position: absolute;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.btn btn-secondary btn-lg {
+  display: block;
+}
+/*
+.roster-title {
+  font-size: 10px;
+  font-weight: 900;
+}
+*/
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+}

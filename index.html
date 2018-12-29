@@ -2,7 +2,213 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>testing testing testing</title>
-    <p>lei's testing 3.0</p>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans|Alfa+Slab+One"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <title>Capital City</title>
   </head>
-  <body></body>
+  <body>
+    <button
+      type="button"
+      class="btn btn-secondary btn-lg"
+      data-toggle="modal"
+      data-target="#myModal"
+    >
+      TicketMaster Testing
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">TicketMaster</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div
+              w-type="calendar"
+              w-tmapikey="wtztcTScnQ65ngHSXYQy3GRyXD1pU1Mg"
+              w-googleapikey="YOUR_GOOGLE_API_KEY"
+              w-keyword="Washington Capitals Hockey"
+              w-theme="calendar"
+              w-colorscheme="custom"
+              w-width="700"
+              w-height="400"
+              w-size="25"
+              w-border="1"
+              w-borderradius="4"
+              w-postalcode=""
+              w-radius="25"
+              w-period=""
+              w-periodweek=""
+              w-layout="vertical"
+              w-classificationid=""
+              w-attractionid=""
+              w-promoterid=""
+              w-venueid=""
+              w-affiliateid=""
+              w-segmentid=""
+              w-proportion="standart"
+              w-countrycode="US"
+              w-postalcodeapi=""
+              w-city=""
+              w-latlong=""
+            ></div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-secondary btn-lg"
+      data-toggle="modal"
+      data-target="#teaminfo"
+    >
+      About the Capitals
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="teaminfo">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">Capitals info body..</div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-secondary btn-lg"
+      data-toggle="modal"
+      data-target="#roster"
+    >
+      Roster
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="roster">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Team Roster</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body"><div class="rostercards"></div></div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="btn btn-secondary btn-lg"
+      data-toggle="modal"
+      data-target="#schedule"
+    >
+      Schedule
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="schedule">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Recent Games</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">Schedule..</div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/calendar/1.0.0/lib/main-widget.js"></script>
+    <script src="app.js"></script>
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
