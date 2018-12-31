@@ -5,6 +5,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Abel', sans-serif;
+
 }
 .sidebar {
   font-family: "Alfa Slab One", cursive;
@@ -21,6 +22,7 @@ body {
   -webkit-animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 
 .btn {
   font-family: 'Abel', sans-serif;
@@ -39,6 +41,7 @@ body {
 h3 {
   text-align: center;
 }
+
 
 /*
 .roster-title {
