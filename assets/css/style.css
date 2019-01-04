@@ -4,12 +4,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Abel', sans-serif;
-
+  font-family: "Abel", sans-serif;
 }
 .jumbotron {
   background: url("../images/logo.png") bottom;
-  font-family: 'Ultra', serif;
+  font-family: "Ultra", serif;
   color: white;
 }
 .sidebar {
@@ -28,33 +27,22 @@ body {
   animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-
 .btn {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   margin: 20px;
   width: 20%;
   padding: 20px;
-
 }
 
 .btn:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-.timeline-image{
+.timeline-image {
   float: left;
   width: 200px;
   margin: 25px;
-
 }
-
-
-/*
-.roster-title {
-  font-size: 10px;
-  font-weight: 900;
-}
-*/
 
 @-webkit-keyframes slide-left {
   0% {
@@ -93,3 +81,46 @@ body {
   text-align: justify;
   padding: 20px;
 }
+
+
+@media screen and (max-width: 980px){
+  .btn {
+    font-family: "Abel", sans-serif;
+    margin: 20px;
+    width: 20%;
+    padding: 20px;
+  }
+
+}
+    
+    
+@media screen and (max-width: 768px){
+
+
+  .btn {
+    font-family: "Abel", sans-serif;
+    margin: 17px;
+    width: 20%;
+    padding: 18px;
+  }
+
+ 
+}
+
+@media screen and (max-width: 640px){
+  .btn {
+    font-family: "Abel", sans-serif;
+    margin: 14px;
+    width: 20%;
+    padding: 10px;
+  }
+
+
+    
+ 
+}
+
+
+
+
+
