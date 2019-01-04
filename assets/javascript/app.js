@@ -15,35 +15,12 @@ $.ajax({
   card.addClass("card");
   $(".rostercards").append(card);
 
-  var images = [
-    "assets/images/0.jpg",
-    "assets/images/1.jpg",
-    "assets/images/2.jpg",
-    "assets/images/3.jpg",
-    "assets/images/4.jpg",
-    "assets/images/5.jpg",
-    "assets/images/6.jpg",
-    "assets/images/7.jpg",
-    "assets/images/8.jpg",
-    "assets/images/9.jpg",
-    "assets/images/10.jpg",
-    "assets/images/11.jpg",
-    "assets/images/12.jpg",
-    "assets/images/13.jpg",
-    "assets/images/14.jpg",
-    "assets/images/15.jpg",
-    "assets/images/16.jpg",
-    "assets/images/17.jpg",
-    "assets/images/18.jpg",
-    "assets/images/19.jpg",
-    "assets/images/20.jpg",
-    "assets/images/21.jpg",
-    "assets/images/22.jpg",
-    "assets/images/23.jpg",
-    "assets/images/24.jpg"
-    //"assets/images/24.jpg"
-  ];
+  var images = [];
+  var team = 25;
 
+  for (var i = 0; i < team; i++) {
+    images.push("assets/images/" + i + ".jpg");
+  }
   for (var i = 0; i < images.length; i++) {
     images[i] = '<img src="' + images[i] + '">';
   }
@@ -66,14 +43,11 @@ $.ajax({
     $("#header" + i).append(buttonLink);
 
     //
-    /* for (var i = 0; i < images.length; i++) {
-      $("#player" + i).append(images[i]);
-    }
-    */
+
     //
 
     $("#player" + i).append(
-      images[i-1],
+      images[i - 1],
       playerName,
       "<br>",
       jerseyNumber,
