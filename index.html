@@ -1,8 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <title>testing testing testing</title>
-    <p>lei's testing 3.0</p>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div id="userHouseNum"></div>
+    <div id="userStreet"></div>
+    <div id="userCity"></div>
+    <div id="userState"></div>
+    <div id="userZip"></div>
+
+
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Capital One Arena
+  var arena = {lat: 38.898258, lng: -77.020858};
+  // The map, centered at COA
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: arena});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: arena, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIfMfuapophbfzMtD2mSFi1RqOUH8K5xY&callback=initMap">
+    </script>
+  </body>
+</html>
+, 
